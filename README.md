@@ -14,6 +14,8 @@ There are five files:
 - terminate_cluster.sh
 
 The create_namenode.sh and create_datanode.sh files launch the instances for namenode and datanode(s) (namenode instance is dedicated for namenode related services - no datanode services are installed there). It is advised to start at least one datanode.
+When EC2 instance for namenode is ready, script_namenode.sh is executed on that instance.
+When EC2 instance(s) for datanode(s) are ready, script_dataode.sh is executed on the instance(s).
 
 ## Prerequisities:
 I have defined one instance as "initial" instance. This is where the scripts are located and this instance creates and terminates the cluster. This instance is not a part of the Hadoop cluster.
