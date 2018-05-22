@@ -6,10 +6,10 @@
 
 # name of the namenode
 NAME="namenode"
-KEYPAIR="mykeypair"
-SECURITYGROUP="sg-6ca63925"
-SUBNET="subnet-9bce3afc"
-SCRIPT="file:///home/ubuntu/hadoop/script_namenode.sh"
+KEYPAIR="keypair"
+SECURITYGROUP="sg-xxxx"
+SUBNET="subnet-xxxx"
+SCRIPT="file:///script_namenode.sh"
 
 # run the aws command to create an instance and run a script when the instance is created.
 # the command returns the private IP address which is used to update the local /etc/hosts file
@@ -56,7 +56,7 @@ cat ~/.ssh/id_rsa | ssh -i ~/.ssh/my.key ubuntu@$NAME "cat > ~/.ssh/id_rsa && ch
 # DATANODES #
 #############
 
-SCRIPT="file:///home/ubuntu/hadoop/script_datanode.sh"
+SCRIPT="file:///script_datanode.sh"
 NAME="datanode"
 
 aws ec2 run-instances --image-id ami-43a15f3e --count $1 \
