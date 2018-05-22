@@ -30,6 +30,8 @@ I am using Ubuntu 16.04 for all my instances. Make sure you have awscli package 
 * security group
   * open all traffic for all instances in the same subnet and security group
   * open port 9870 for Namenode Web Interface
+  * open port 8088 for Resource Manager (YARN)
+  * open port 19888 for MapReduce JobHistory server
 * subnet
 
 ## Times
