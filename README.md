@@ -52,4 +52,4 @@ The HaaS.sh script does the following actions:
 * copy /etc/hosts from initial instance to all Hadoop instances
 * copy workers file to namenode's $HADOOP_HOME/etc/hadoop
 * start services on datanode(s)
-
+* remove temporary files
