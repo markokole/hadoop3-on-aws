@@ -134,8 +134,7 @@ sudo -u hdfs $HADOOP_HOME/bin/hdfs namenode -format
 ## Hadoop daemons
 # start namenode
 sudo -u hdfs $HADOOP_HOME/sbin/hadoop-daemon.sh start namenode
-# start datanode
-#sudo -u hdfs $HADOOP_HOME/sbin/hadoop-daemon.sh start datanode # commented because no datanode is ran on namenode instance
+
 # start secondarynamenode
 sudo -u hdfs $HADOOP_HOME/sbin/hadoop-daemon.sh start secondarynamenode
 
