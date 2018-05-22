@@ -25,7 +25,11 @@ When EC2 instance(s) for datanode(s) are ready, script_datanode.sh is executed o
 I have defined one instance as "Initial" instance. This is where the scripts are located and this instance creates and terminates the cluster. This instance is not a part of the Hadoop cluster, it launches the cluster and terminates it.
 I am using Ubuntu 16.04 for all my instances. Make sure you have awscli package installed and aws configured on this initial instance.
 
-### On AWS
+### Prerequisities on AWS
+* key pair
+* security group - open all traffic for all instances in the same subnet and security group, open port 9870 for Namenode Web Interface
+** vvv
+* subnet
 
 ## Times
 Launching a Hadoop cluster with 10 datanodes took less than 10 minutes. When testing, I did also come down to 8 minutes. I am using sleep command in the Haas.sh script in order to wait for the instances to either start running or for Hadoop to download and install (unpack). Room for optimization here as well.
