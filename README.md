@@ -1,4 +1,4 @@
-# Hadoop as a Service on AWS
+# Hadoop 3 as a Service on AWS
 
 The general idea is to have a solution that builds an Apache Hadoop 3 cluster from command line.
 This can be useful for learning purposes, for testing or for spinning a Hadoop cluster for a certain job and then terminating it, hence minimizing costs.
